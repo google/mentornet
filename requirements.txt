@@ -1,0 +1,4 @@
+python==2.7.15
+tensorflow==1.8.0
+numpy==1.13.3
+imageio==2.3.0
