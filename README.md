@@ -110,13 +110,13 @@ We train a few MentorNets listed below. We can think of a MentorNet as a hyper-p
 
 | Curriculum                            |                                           Visualization                                              |                   Intuition                      |       Model Name      |
 | :-------------------------------------| :----------------------------------------------------------------------------------------------------| :------------------------------------------------| :-------------------- |
-| No curriculum         |  ![image](https://storage.googleapis.com/mentornet_project/images/no_curriculum.gif)     |  Assign uniform weight to every sample uniform.                        |`baseline_mentornet` |
-| Self-paced <br/>(Kuma et al. 2010)         |  ![image](https://storage.googleapis.com/mentornet_project/images/self_paced.gif)    |  Favor samples of smaller loss.                        |`self_paced_mentornet` |
-| SPCL linear <br/>(Jiang et al. 2015)       |  ![image](https://storage.googleapis.com/mentornet_project/images/spcl_linear.gif)     |  Discount the weight by loss linearly.                 |`spcl_linear_mentornet`|
-| Hard example mining <br/>(Felzenszwalb et al., 2008) | ![image](https://storage.googleapis.com/mentornet_project/images/hard_example_mining.gif) | Favor samples of greater loss.         | `hard_example_mining_mentornet` |
-| Focal loss <br/>(Lin et al., 2017)         |  ![image](https://storage.googleapis.com/mentornet_project/images/focal_loss.gif)     |  Increase the weight by loss by the exponential CDF.        | `focal_loss_mentornet`|
-| Predefined Mixture         |  ![image](https://storage.googleapis.com/mentornet_project/images/mentornet_pd.gif) |  Mixture of SPL and SPCL changing by epoch.       |   `mentornet_pd`       |
-| MentorNet Data-driven     |  ![image](https://storage.googleapis.com/mentornet_project/images/mentornet_dd.gif)  | Learned on a small subset of the CIFAR data.  | `mentornet_dd`         |
+| No curriculum         |  ![image](images/no_curriculum.gif)     |  Assign uniform weight to every sample uniform.                        |`baseline_mentornet` |
+| Self-paced <br/>(Kuma et al. 2010)         |  ![image](images/self_paced.gif)    |  Favor samples of smaller loss.                        |`self_paced_mentornet` |
+| SPCL linear <br/>(Jiang et al. 2015)       |  ![image](images/spcl_linear.gif)     |  Discount the weight by loss linearly.                 |`spcl_linear_mentornet`|
+| Hard example mining <br/>(Felzenszwalb et al., 2008) | ![image](images/hard_example_mining.gif) | Favor samples of greater loss.         | `hard_example_mining_mentornet` |
+| Focal loss <br/>(Lin et al., 2017)         |  ![image](images/focal_loss.gif)     |  Increase the weight by loss by the exponential CDF.        | `focal_loss_mentornet`|
+| Predefined Mixture         |  ![image](images/mentornet_pd.gif) |  Mixture of SPL and SPCL changing by epoch.       |   `mentornet_pd`       |
+| MentorNet Data-driven     |  ![image](images/mentornet_dd.gif)  | Learned on a small subset of the CIFAR data.  | `mentornet_dd`         |
 
 
 
