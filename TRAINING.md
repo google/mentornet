@@ -8,7 +8,7 @@ There are two ways to learn a MentorNet.
 Sometimes, when the clean data is not available, we learn a data-driven MentorNet on another dataset (with clean labels) and transfer it on the target dataset.
 *In experiments, we learn the MentorNet on CIFAR-10 and use it on CIFAR-100.*.
 
-![](https://storage.googleapis.com/mentornet_project/images/learning_new_mentornet.png)
+![](https://storage.googleapis.com/mentornet_project/images/learning_new_mentornet.png){:height="50%" width="50%"}
 
 ## Step 1 Generate Data
 
