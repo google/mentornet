@@ -49,6 +49,7 @@ All code was developed and tested on Nvidia V100/P100 (16GB) the following envir
 
 (Optional) *everything can be set up on Google Cloud Deep learning VM in ~5 min.*
 
+Next we need to download the dataset and pre-trained MentorNet models. Put them into the same directory as the `code` directory. 
 
 ```bash
 gsutil -m cp -r gs://mentornet_project/data .
@@ -64,7 +65,7 @@ export PYTHONPATH="$PYTHONPATH:$PWD/code/"
 
 python code/cifar_train_mentornet.py \
   --dataset_name=cifar10   \
-  --trained_mentornet_dir=mentornet_models/models/mentornet_pd1_g_1/mentornet.model-29999 \
+  --trained_mentornet_dir=mentornet_models/models/mentornet_pd1_g_1/mentornet_pd \
   --loss_p_precentile=0.75  \
   --nofixed_epoch_after_burn_in  \
   --burn_in_epoch=0  \
