@@ -47,8 +47,6 @@ All code was developed and tested on Nvidia V100/P100 (16GB) the following envir
 - imageio 2.3.0
 
 
-(Optional) *everything can be set up on Google Cloud Deep learning VM in ~5 min.*
-
 Next we need to download the dataset and pre-trained MentorNet models. Put them into the same directory as the `code` directory. 
 
 ```bash
