@@ -46,8 +46,7 @@ All code was developed and tested on Nvidia V100/P100 (16GB) the following envir
 - numpy 1.13.3
 - imageio 2.3.0
 
-
-Next we need to download the dataset and pre-trained MentorNet models. Put them into the same directory as the `code` directory. 
+Download [Cloud SDK](https://cloud.google.com/sdk/) to get data and models. Next we need to download the dataset and pre-trained MentorNet models. Put them into the same directory as the `code` directory. 
 
 ```bash
 gsutil -m cp -r gs://mentornet_project/data .
