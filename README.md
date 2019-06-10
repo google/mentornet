@@ -53,6 +53,9 @@ gsutil -m cp -r gs://mentornet_project/data .
 gsutil -m cp -r gs://mentornet_project/mentornet_models .
 ```
 
+Alternatively, you may download the zip files: [data](https://storage.cloud.google.com/mentornet_project/data.zip) and [models](https://storage.cloud.google.com/mentornet_project/mentornet_models.zip).
+
+
 
 ## Running MentorNet on CIFAR
 
