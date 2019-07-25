@@ -124,7 +124,7 @@ class ResNet(object):
   def _build_train_op(self):
     """Build training specific ops for the graph."""
     self.lrn_rate = tf.constant(self.hps.lrn_rate, tf.float32)
-    tf.contrib.deprecated.scalar_summary('learning rate', self.lrn_rate)
+    tf.compat.v1.summary.scalar('learning rate', self.lrn_rate)
 
     trainable_variables = tf.trainable_variables()
     grads = tf.gradients(self.cost, trainable_variables)
