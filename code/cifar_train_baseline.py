@@ -247,7 +247,8 @@ def train_inception_baseline(max_step_run):
           labels=one_hot_labels, logits=logits)
       total_loss = tf.reduce_mean(total_loss)
 
-      tf.contrib.deprecated.scalar_summary('Total Loss', total_loss)
+      # Using latest tensorflow ProtoBuf.
+      tf.compat.v1.summary.scalar('Total Loss', total_loss)
 
       decay_steps = int(
           num_samples_per_epoch / FLAGS.batch_size * FLAGS.num_epochs_per_decay)
